@@ -1,6 +1,6 @@
 {
   "description": "Sends a HTTP(S) request",
-  "label": "HTTP(S) 3.0 (JSON)",
+  "label": "HTTP(S) - Dynamic Body - JSON",
   "category": "External",
   "icon": {
     "name": "CloudIcon",
@@ -88,7 +88,7 @@
       "meta": {
         "type": "Output",
         "output": {
-          "type": "Text"
+          "type": "JSON"
         }
       },
       "name": "as",

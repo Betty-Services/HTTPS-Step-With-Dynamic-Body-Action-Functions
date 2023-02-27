@@ -1,9 +1,5 @@
-import http from '../functions/http/1.0';
+import httpJson from '../functions/http-json/1.0';
 describe('Run HTTP Test', () => {
-  const exampleInput = {
-    example: true,
-  };
-
   test('Run HTTP3 with expected outcome', async () => {
     expect.assertions(1);
 
@@ -18,9 +14,9 @@ describe('Run HTTP Test', () => {
       queryParameters: [{ key: 'name', value: 'foo' }],
     };
 
-    const { as } = await http(request);
+    const { as } = await httpJson(request);
 
-    expect(as).toBe('return text');
+    expect(as).toMatchObject({ key: 'value' });
   });
 
   test('Will crash when fetch throws errors.', () => {
@@ -36,7 +32,7 @@ describe('Run HTTP Test', () => {
       protocol: 'http',
       queryParameters: [{ key: 'name', value: 'foo' }],
     };
-    http(request).catch(({ message }) => {
+    httpJson(request).catch(({ message }) => {
       expect(message).toBe('Something went wrong.');
     });
   });
