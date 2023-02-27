@@ -1,0 +1,5 @@
+{
+  "dependencies": [],
+  "functions": ["http 1.0"],
+  "includes": []
+}
