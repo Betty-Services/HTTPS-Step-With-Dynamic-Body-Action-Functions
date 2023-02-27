@@ -1,5 +1,5 @@
 {
   "dependencies": [],
-  "functions": ["http 1.0"],
+  "functions": ["httpJson 1.0", "httpText 1.0"],
   "includes": []
 }
