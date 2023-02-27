@@ -1,0 +1,19 @@
+name: CI
+on: [push]
+jobs:
+  validate-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      -
+        name: Install BB CLI
+        run: |
+            npm i -g @betty-blocks/cli
+      -
+        name: Install the included npm packages
+        run: |
+            npm ci
+      -
+        name: Run validation
+        run: |
+            bb functions validate

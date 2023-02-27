@@ -1,0 +1,30 @@
+{
+  "description": "This is an example function for the template repository",
+  "label": "Example Function",
+  "category": "Example",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "label": "This is the label above the input field on the detailview of this action function in the Actions IDE.",
+      "name": "input",
+      "meta": {
+        "type": "Object"
+      },
+      "info": "This text is visible within the Actions IDE when hovering over the questionmark next to the label."
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
