@@ -1,47 +1,20 @@
-![Action Validation](https://github.com/betty-services/Custom-Action-Functions-Template/actions/workflows/main.yml/badge.svg?event=push)
+![Action Validation](https://github.com/betty-services/HTTPS-Helper-Steps-Custom-Action-Functions/actions/workflows/main.yml/badge.svg?event=push)
 
-# Custom Action Functions Template
+# HTTPS Custom Action Function
 
-This repository can be used to kick-start your new repositories for Custom Action Functions.
+This repository hosts the code for the custom actions steps found in the [HTTP Step with Dynamic Body](https://my.bettyblocks.com/block-store/ce6fcfdb-6d89-4221-89d0-f8d9dd86e569/dev/) from the Betty Blocks block store.
 
-### What does this repository include
+## This repository hosts the following steps:
 
-- `config.json`
-  - Simply set your applications' ID (make sure to use the lowest sandboxes' ID) to publish new functions.
-- `.gitignore`
-  - To not commit any unnecessary files.
-- Function validation
-  - Currently only scoped to validate the custom action steps when pushed to the repository.
-- Ready to use jest configuration
-  - Install jest using `npm i -g jest`
-  - Run the `jest` command
-- An example function including an example Jest test script
-- A protected `main` branch that requires pulls to be updated.
+- HTTP - Dynamic Body - JSON
+- HTTP - Dynamic Body - Text
 
-### First steps:
+### HTTP - Dynamic Body - JSON
 
-1.  Create a new repository. Use this repository as a template.
-2.  Pull your repository.
-3.  Run `npm ci` to install all required packages.
-4.  Develop!
+This action step allows you to attach a `JSON`, `Number` or `Text` into the body.
+The result will be in `JSON` format.
 
-### To do:
+### HTTP - Dynamic Body - Text
 
-- [ ] Automated jest testing
-  - [ ] Include coverage report in `README.md` file
-- [ ] Automated block publishing
-- [ ] Fix hardcoded badge URL in `README.md`
-
----
-
-**Remove the content above when you made a new repository from this template and keep the following:**
-
-# 'Block Name' Custom Action Functions
-
-This repository hosts the code for the custom actions steps found in the [the blocks' name](https://my.bettyblocks.com/block-store/blockId/) from the Betty Blocks block store.
-
-### This repository hosts the following steps:
-
-- Example Function
-
-_Do not forget to update the badge above once this repository has been used._
+This action step allows you to attach a `JSON`, `Number` or `Text` into the body.
+The result will be in `Text` format.
