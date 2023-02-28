@@ -12,26 +12,26 @@ const parseQueryParameters = (queryParameters) =>
 const generateUrl = (url, protocol, queryParameters) =>
   `${protocol}://${url}${parseQueryParameters(queryParameters)}`;
 
-const httpText = async ({
+const httpDynamicBody = async ({
   url,
   method,
   headers = [],
   protocol,
   queryParameters = [],
-  body = '',
+  body = null,
 }) => {
   const fetchUrl = generateUrl(url, protocol, queryParameters);
   const options = {
     method,
     headers: parseHeaders(headers),
-    body: method !== 'get' && body !== '' ? body : undefined,
+    body: method !== 'get' && body !== null ? body : undefined,
   };
 
   const response = await fetch(fetchUrl, options);
-  const json = await response.json();
+
   return {
-    as: json,
+    as: await response.text(),
   };
 };
 
-export default httpText;
+export default httpDynamicBody;
