@@ -6,15 +6,9 @@ This repository hosts the code for the custom actions steps found in the [HTTP S
 
 ## This repository hosts the following steps:
 
-- HTTP - Dynamic Body - JSON
-- HTTP - Dynamic Body - Text
+- HTTP - Dynamic Body
 
-### HTTP - Dynamic Body - JSON
-
-This action step allows you to attach a `JSON`, `Number` or `Text` into the body.
-The result will be in `JSON` format.
-
-### HTTP - Dynamic Body - Text
+### HTTP - Dynamic Body
 
 This action step allows you to attach a `JSON`, `Number` or `Text` into the body.
 The result will be in `Text` format.
