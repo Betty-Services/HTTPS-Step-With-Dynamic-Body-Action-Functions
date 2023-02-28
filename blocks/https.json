@@ -1,5 +1,5 @@
 {
   "dependencies": [],
-  "functions": ["httpJson 1.0", "httpText 1.0"],
+  "functions": ["httpDynamicBody 1.1"],
   "includes": []
 }
